@@ -1,55 +1,126 @@
-<DOCTYPE!>
+<!DOCTYPE html>
 <head>
-	<title>Amrit Bal</title>
-	<style>
-	body {
-		text-align: center;
-		background: url("http://upload.wikimedia.org/wikipedia/commons/2/25/Blassenstein_Erlauftal_mit_Nebel_02_Panorama.JPG");
-		background-size: cover;
-		background-position: center;
+<script src="/assets/jquery.js"></script>
+<<link href='http://fonts.googleapis.com/css?family=Yellowtail' rel='stylesheet' type='text/css'>
+<style>
+body {
+  font-family: 'Yellowtail', cursive;
+  font-size: 30px;
+  margin: 0 auto;
+  max-width: 600px;
+  background: #dddddd;
+}
+div {
+  height: 200px;
+  background-size: cover;
+  position: relative;
+  margin: 35px 0 0 0;
+  border-radius: 12px;
+}
+h1 {
+  font-family: 'Yellowtail', cursive;
+  text-align: center;
+  font-size: 75px;
+  color: #000066;
+  margin: 40px 0 0 0;
+}
+h2 {
+  font-family: 'Yellowtail', cursive;
+  text-align: center;
+  color: #484848;
+  margin: 0px 0 70px 0;
+}
+p {
+  color: rgba(255,255,255,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
 
-	}
-	a {
-		color: black;
-	}
-	h1 {
-		font-size: 55px;
-		color: pink;
-		font-family: garamond;
-	}
-	img {
-		margin: 40px 0px 0px 40px;
-		border: 5px solid black;
-		border-radius: 10 px;
-	}
-	ul {
-		padding: 10px;
-		background: rgba (200, 70, 90, 0.5);
-	}
-	li {
-		display: inline;
-		padding: 0px 10px 0px 10px;
-		font-family: garamond;
-		font-size: 25px;
-	}
-	
+small {
+  opacity: 0;
+}
+
+.show-description p {
+  height: 150px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+
+.first{
+  background-image: url("http://upload.wikimedia.org/wikipedia/commons/9/9d/2013_Panorama_Ziemi_K%C5%82odzkiej_z_Ziele%C5%84ca_1.jpg");
+}
+.second{
+  background-image: url("http://upload.wikimedia.org/wikipedia/commons/e/e9/MAP2-tau_in_neurons.jpg");
+}
+.dessert{
+  background-image: url("http://upload.wikimedia.org/wikipedia/commons/6/66/London_Night_view.jpg?uselang=en-gb");
+}
+.price {
+  float: right;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 16px;
+    
+  }
+}
+
 </style>
+
 </head>
 
 <body>
-	
-		<img src="https://media.licdn.com/mpr/mpr/shrink_120_120/p/3/005/077/35c/3b5fd97.jpg">
-	<h1>AMRIT BAL</h1>
-	<ul>
-		<li><a href="#">About Me</a></li>
-		<li><a href="#">Art Portfolio</a></li>
-		<li><a href="#">Life in Pics</a></li>
-	</ul>
+<h1>Amrit Bal</h1>
+<h2>Photography portfolio</h2>
+<div class="first">
+  <p>Gallery
+  <small>Mustard sierra leone bologi kale chard beet greens black-eyed pea sorrel amaranth garlic tigernut spring onion summer purslane asparagus lentil. </small></p>
+</div>
 
+<div class="second">
+  <p>About Me
+  <small>Tri-tip capicola kielbasa salami brisket chicken rump strip steak drumstick. Meatloaf chuck boudin ribeye pork jowl. Andouille bacon jowl meatloaf pork loin prosciutto bresaola.</small></p>
+</div>
+  
+<div class="dessert">
+  <p>Contact
+  <small>Lollipop tart cotton candy jelly-o carrot cake apple pie cupcake. Jelly-o bear claw ice cream candy canes.</small></p>
+</div>
+
+<script>
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+</script>
 
 </body>
-
-
-
-
-
