@@ -18,10 +18,12 @@ blockquote {
   border-left: 0;
 }
 #buzz {
+  font-family:'Calligraffitti', cursive;
   background: linear-gradient(bottom, rgba(191,37,185,.5), rgba(191,37,185,.1));
   background: -webkit-linear-gradient(bottom, rgba(191,37,185,.5), rgba(191,37,185,.1));
   background: -moz-linear-gradient(bottom, rgba(191,37,185,.5), (191,37,185,.1));}
 #mission {
+  font-family:'Calligraffitti', cursive;
 	background: linear-gradient(bottom, rgba(191,37,185,.6), rgba(191,37,185,.5));
   background: -webkit-linear-gradient(bottom, rgba(191,37,185,.6), rgba(191,37,185,.5));
   background: -moz-linear-gradient(bottom, rgba(191,37,185,.6), (191,37,185,.5));}
