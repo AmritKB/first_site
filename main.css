@@ -1,5 +1,6 @@
 .navbar-inverse {
-  background-color: rgba(32, 35, 41,0.8);
+  background-color: rgba(32, 35, 41,0.2);
+  font-family:'Calligraffitti', cursive;
 }
  .jumbotron {
  	padding-top: 90px;
@@ -19,16 +20,19 @@ blockquote {
 }
 #buzz {
   font-family:'Calligraffitti', cursive;
-  background: linear-gradient(bottom, rgba(191,37,185,.5), rgba(191,37,185,.1));
-  background: -webkit-linear-gradient(bottom, rgba(191,37,185,.5), rgba(191,37,185,.1));
-  background: -moz-linear-gradient(bottom, rgba(191,37,185,.5), (191,37,185,.1));}
+  color: white;
+  background: linear-gradient(bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.5));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.5));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,0.6), (0,0,0,0.5));}
 #mission {
   font-family:'Calligraffitti', cursive;
-	background: linear-gradient(bottom, rgba(191,37,185,.6), rgba(191,37,185,.5));
-  background: -webkit-linear-gradient(bottom, rgba(191,37,185,.6), rgba(191,37,185,.5));
-  background: -moz-linear-gradient(bottom, rgba(191,37,185,.6), (191,37,185,.5));}
+  color:white;
+	background: linear-gradient(bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.6));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.6));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,0.9), (0,0,0,0.6));}
   padding-bottom: 40px;
 }
+h2 { color: white;}
 
 #social-buttons button {
   color: white;
